@@ -1,0 +1,324 @@
+/**
+font-family: 'Mooli', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans:wght@800&family=Permanent+Marker&family=Quicksand:wght@300&family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.headerIndex{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.headerIndex nav ul a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    font-size: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Mooli', sans-serif;
+}
+
+.headerIndex a img{
+    width: 20rem;
+    height: 5.25rem;
+    background-color: black;
+}
+
+.divNav a img{
+    width: 2.3rem;
+    height: 2.1rem;
+}
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navBar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.sectionPrincipal{
+    background-image: url("https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1511&q=80");
+    width: 100%;
+    height: 31.25rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    font-size: 1.35rem;
+    padding: 2rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.sectionPrincipal h1{
+    text-align: center;
+    font-size: 3.5rem;
+    color:white;
+    padding: 50px 50px 50px 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.sectionSecundaria{
+    text-align: center;
+    padding: 1rem;
+    background-color: white;
+    font-size: 1.5rem;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sectionSecundaria h2{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.sectionSecundaria button{
+    font-size: 1.25rem;
+    text-decoration: none;
+    list-style: none;
+    background: black;
+    padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+    margin: 0.5rem;
+    color: white
+}
+
+.sectionSecundaria button a{
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.card{
+    width: 18.75rem;
+    height: 25rem;
+    overflow: hidden;
+    margin: 1.5rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.card div img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cardContainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 27rem;
+    padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+    margin: 1.5rem;
+}
+
+.card button{
+    text-decoration: none;
+    list-style: none;
+    background: black;
+    color: white
+}
+
+.card button a{
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+}
+
+.footerPrincipal{
+    background-color:black;
+    color: white;
+    display: flex;
+    list-style: none;
+    font-size: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.footerPrincipal ul{
+    margin: 2.5rem;
+    font-size: 0.85rem;
+    font-family: 'Mooli', sans-serif;
+}
+
+.footerPrincipal div a img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.mainPrincipal{
+    background-color:black;
+    color: white;
+    display: flex;
+    list-style: none;
+    font-size: 1.25rem;
+    justify-content: space-between;
+    align-items: left;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.sectionTerciaria{
+    text-align: left;
+    background-color: #1E1438;
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    gap: 3rem;
+}
+
+.sectionTerciaria div img{
+    width: 49.65rem;
+    height: 25rem;
+    align-items: right;
+}
+
+.sectionTerciaria article{
+    padding: 2.5rem;
+    margin: 2.5rem;
+    align-items: left;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sectionTerciaria h2{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.sectionTerciaria button{
+    font-size: 1.25rem;
+    text-decoration: none;
+    list-style: none;
+    background: white;
+    padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+    margin: 0.5rem;
+    color: black
+}
+
+.sectionTerciaria button a{
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.sectionSecundariaBis{
+    text-align: left;
+    display: flex;
+    padding: 1rem;
+    background-color: white;
+    font-size: 1.5rem;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    gap: 20rem;
+}
+
+.sectionSecundariaBis h2{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.sectionSecundariaBis h3{
+    font-family: 'Roboto', sans-serif;
+}
+
+.sectionSecundariaBis p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem
+}
+
+.sectionSecundariaBis div img{
+    width: 22rem;
+    height: 20rem;
+    align-items: center;
+}
+
+.sectionSecundariaBis button{
+    font-size: 1.25rem;
+    text-decoration: none;
+    list-style: none;
+    background: black
+}
+
+.sectionSecundariaBis button a{
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.mainRegistro{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.mainRegistro h2{
+    font-family: 'Open Sans', sans-serif;
+    color: white
+}
+
+.mainRegistro form label{
+    font-family: 'Mooli', sans-serif;
+    color: white
+}
+
+.logIn form{
+    display: flex;
+    flex-direction: column;
+}
+
+.nuevoUsuario form{
+    display: flex;
+    flex-direction: column;
+}
+
+.mainCarrito{
+    background-color: black;
+}
+
+.mainCarrito h1{
+    font-family: 'Mooli', sans-serif;
+    text-align: center;
+    color: white
+}
+
+.mainCarrito button{
+    font-family: 'Mooli', sans-serif;
+    display: inline-block;
+    margin: 15rem;
+}

@@ -14,51 +14,67 @@ font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 
-.headerIndex{
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
+nav-wrapper{
+    width: 100%;
+    margin:0 auto;
+    padding: 1rem;
 }
 
-.headerIndex nav ul a{
+a img{
+    width: 15rem;
+    height: 4.25rem;
+    background-color: black;
+    color: white;
+}
+
+nav{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem 1.5rem;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+
+nav ul{
+    list-style:none;
     display: flex;
+    gap: 2rem;
+    font-family: 'Mooli', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+a{
     text-decoration: none;
     color: white;
-    list-style: none;
-    font-size: 1rem;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    font-family: 'Mooli', sans-serif;
-}
-
-.headerIndex a img{
-    width: 20rem;
-    height: 5.25rem;
     background-color: black;
 }
 
-.divNav a img{
-    width: 2.3rem;
-    height: 2.1rem;
+nav #toggle, nav label{
+    display: none;
 }
 
-.navBar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-}
-
-.navBar ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
+@media(max-width: 768px){
+    nav .menu{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0px;
+    }
+    nav label{
+        display: flex;
+        cursor: pointer;
+    }
+    nav #toggle:checked ~ .menu{
+        height:100%
+    }
 }
 
 .sectionPrincipal{
@@ -82,6 +98,27 @@ font-family: 'Roboto', sans-serif;
     padding: 50px 50px 50px 50px;
     font-family: 'Open Sans', sans-serif;
 }
+
+@media(max-width:1024px){
+    .sectionPrincipal{
+        padding: .5rem;
+        font-size: 1.5rem;
+    }
+    .sectionPrincipal h1{
+        font-size: 3.25rem;
+    }
+}
+
+@media(max-width:768px){
+    .sectionPrincipal{
+        padding: .2rem;
+        font-size: 1.22rem;
+    }
+    .sectionPrincipal h1{
+        font-size: 2.75rem;
+    }
+}
+
 
 .sectionSecundaria{
     text-align: center;
@@ -113,13 +150,79 @@ font-family: 'Roboto', sans-serif;
     font-family: 'Open Sans', sans-serif;
 }
 
+.cardContainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+    margin: 1.5rem;
+}
+
+@media(max-width:1024px){
+    .cardContainer{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: left;
+        height: 30rem;
+        padding-right: 3.5rem;
+    }
+}
+
+@media(max-width:768px){
+    .cardContainer{
+        display: flex;
+        width: 100%;
+        height: 120rem;
+        justify-content: space-between;
+        align-content:  center;
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+        height: 100%; 
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .card div img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: top;
+    }
+    
+    .card button{
+    text-decoration: none;
+    list-style: none;
+    background: black;
+    color: white;
+    margin: 0.1rem 0.1rem 0.1rem 0.1rem;
+    }
+    
+    .card button a{
+    font-size: 0.5rem;
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0.05rem 0.05rem 0.05rem 0.05rem;
+    display: flex;
+    }
+}
+
 .card{
     width: 18.75rem;
-    height: 25rem;
+    height: 30rem; 
     overflow: hidden;
     margin: 1.5rem;
     text-align: center;
+    align-items: center;
     font-family: 'Roboto', sans-serif;
+    gap: 3rem;
 }
 
 .card h3{
@@ -130,24 +233,17 @@ font-family: 'Roboto', sans-serif;
 
 .card div img{
     width: 100%;
-    height: 100%;
+    height: 18rem; 
     object-fit: contain;
-}
-
-.cardContainer{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    height: 27rem;
-    padding: 0.25rem 0.25rem 0.25rem 0.25rem;
-    margin: 1.5rem;
+    object-position: top;
 }
 
 .card button{
     text-decoration: none;
     list-style: none;
     background: black;
-    color: white
+    color: white;
+    margin: 0.35rem 0.35rem 0.35rem 0.35rem;
 }
 
 .card button a{
@@ -155,20 +251,20 @@ font-family: 'Roboto', sans-serif;
     text-decoration: none;
     color: white;
     font-family: 'Open Sans', sans-serif;
-    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+    padding: 0.15rem 0.15rem 0.15rem 0.15rem;
 }
 
 .footerPrincipal{
     background-color:black;
     color: white;
-    display: flex;
     list-style: none;
     font-size: 1rem;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    gap: 3rem;
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
 }
+
 
 .footerPrincipal ul{
     margin: 2.5rem;
@@ -176,9 +272,21 @@ font-family: 'Roboto', sans-serif;
     font-family: 'Mooli', sans-serif;
 }
 
+
 .footerPrincipal div a img{
     width: 3rem;
     height: 3rem;
+}
+
+@media(max-width:1024px){
+    .footerPrincipal ul{
+        margin: 1rem;
+        font-size: 0.70rem;
+        font-family: 'Mooli', sans-serif;
+        justify-content:space-between;
+        align-items:top;
+        padding-right: 1.5rem;
+    }
 }
 
 .mainPrincipal{
@@ -202,11 +310,31 @@ font-family: 'Roboto', sans-serif;
     gap: 3rem;
 }
 
+
 .sectionTerciaria div img{
-    width: 49.65rem;
-    height: 25rem;
-    align-items: right;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: right;
 }
+
+@media(max-width:1024px){
+    .sectionTerciaria{
+        text-align: left;
+        background-color: #1E1438;
+        font-size: 1.25rem;
+        color: white;
+        display: flex;
+        gap: 1rem;
+        padding: none;
+        border: none;
+    }
+    .sectionTerciaria div img{
+        object-fit:contain;
+        object-position: none;
+    }
+}
+
 
 .sectionTerciaria article{
     padding: 2.5rem;
@@ -233,6 +361,7 @@ font-family: 'Roboto', sans-serif;
     font-size: 1.25rem;
     text-decoration: none;
     color: black;
+    background-color: white;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -322,3 +451,281 @@ font-family: 'Roboto', sans-serif;
     display: inline-block;
     margin: 15rem;
 }
+
+
+
+.gridContainer{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows:repeat(6,1fr);
+    grid-template-areas:
+    "servicios servicios servicios servicios"
+    "cartaNatal cartaNatal cartaAdultos cartaNinos"
+    "revSolar revSolar revAdultos revNinos"
+    "coaching coaching coachAdultos coachNinos"
+    "astro astro basico intermedio"
+    "astro astro avanzado experto"
+    ;
+    row-gap: .15rem;
+    justify-items: center;
+    align-items: center;
+    background-color: black;
+    color:white;
+    }
+
+    .item1{
+    grid-area:servicios;
+    width: 100%;
+    text-align: center;
+    font-size: 2.15rem;
+    padding: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    background-color:white;
+    color:black;
+    }
+    
+    .item2{
+    grid-area:cartaNatal;
+    background-image: url(../assets/img/carta-natal-adultos.png);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+    font-family: 'Mooli', sans-serif;
+    }
+
+    .item3{
+    grid-area:cartaAdultos;
+    text-align: center;
+    justify-self: center;
+    font-family: 'Roboto', sans-serif;
+    }
+
+    .item3 button{
+        margin-top: .5rem;
+    }
+
+    .item3 button a{
+        font-size: 1rem;
+        text-decoration: none;
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .item4{
+    grid-area:cartaNinos;
+    text-align: center;
+    justify-self: center;
+    font-family: 'Roboto', sans-serif;
+    }
+
+    .item4 button{
+        margin-top: 0.5rem;
+    }
+
+    .item4 button a{
+        font-size: 1rem;
+        text-decoration: none;
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .item5{
+    grid-area:revSolar;
+    background-image: url(../assets/img/rev-solar.png);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.15rem;
+    font-family: 'Mooli', sans-serif;
+    }
+    
+    .item6{
+    grid-area:revAdultos;
+    text-align: center;
+    justify-self: center;
+    font-family: 'Roboto', sans-serif;
+    gap:.25rem;
+    }
+
+    .item6 button{
+        margin-top: .5rem;
+    }
+
+    .item6 button a{
+        font-size: 1rem;
+        text-decoration: none;
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    
+    .item7{
+    grid-area:revNinos;
+    text-align: center;
+    justify-self: center;
+    font-family: 'Roboto', sans-serif;
+    gap:.25rem;
+    }
+
+    .item7 button{
+        margin-top: 1rem;
+    }
+
+    .item7 button a{
+        font-size: 1rem;
+        text-decoration: none;
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .item8{
+    grid-area:coaching;
+    background-image: url(../assets/img/coaching.png);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.15rem;
+    font-family: 'Mooli', sans-serif;
+    }
+    .item9{
+    grid-area:coachAdultos;
+    text-align: center;
+    justify-self: center;
+    font-family: 'Roboto', sans-serif;
+    gap:.25rem;
+    }
+
+    .item9 button{
+        margin-top: .5rem;
+    }
+
+    .item9 button a{
+        font-size: 1rem;
+        text-decoration: none;
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    
+    .item10{
+    grid-area:coachNinos;
+    text-align: center;
+    justify-self: center;
+    font-family: 'Roboto', sans-serif;
+    gap:.25rem;
+    }
+
+    .item10 button{
+        margin-top: 1rem;
+    }
+
+    .item10 button a{
+        font-size: 1rem;
+        text-decoration: none;
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    
+    .item11{
+    grid-area:astro;
+    background-image: url(../assets/img/cursos-astrologia.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
+    padding-top: 5.5rem;
+    font-family: 'Mooli', sans-serif;
+    }
+    
+    
+    .item12{
+    grid-area:basico;
+    text-align: center;
+    justify-self: center;
+    font-family: 'Roboto', sans-serif;
+    gap:.25rem;
+    }
+
+    .item12 button{
+        margin-top: .5rem;
+    }
+
+    .item12 button a{
+        font-size: 1rem;
+        text-decoration: none;
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    
+    .item13{
+    grid-area:intermedio;
+    text-align: center;
+    justify-self: center;
+    font-family: 'Roboto', sans-serif;
+    gap:.25rem;
+    }
+
+    .item13 button{
+        margin-top: .5rem;
+    }
+
+    .item13 button a{
+        font-size: 1rem;
+        text-decoration: none;
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .item14{
+    grid-area:avanzado;
+    text-align: center;
+    justify-self: center;
+    font-family: 'Roboto', sans-serif;
+    gap:.25rem;
+    }
+
+    .item14 button{
+        margin-top: .5rem;
+    }
+
+    .item14 button a{
+        font-size: 1rem;
+        text-decoration: none;
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .item15{
+    grid-area:experto;
+    text-align: center;
+    justify-self: center;
+    font-family: 'Roboto', sans-serif;
+    gap:.25rem;
+    }
+
+    .item15 button{
+        margin-top: .5rem;
+    }
+
+    .item15 button a{
+        font-size: 1rem;
+        text-decoration: none;
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+    }

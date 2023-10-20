@@ -4,109 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  />
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header class="headerIndex">
-        <a href="../index.html">
-            <img src="../assets/img/logo-blanco.png" alt="logo">
-        </a>
-        <form action="">
-            <label for="search"></label>
-            <input type="search" name="" id="search">
-        </form>
-        <nav class="navBar">
-            <ul>
-                <li><a href="./aboutme.html">ABOUT ME!</a></li>
-                <li><a href="#">SERVICIOS</a></li>
-                <li><a href="./contacto.html">CONTACT ME!</a></li>
-            </ul>
-            <div class="divNav">
-                <a href="./registro.html"><img src="../assets/img/registro-blanco-fondo-negro.png" alt="registro o log in"></a>
-                <a href="./carrito.html"><img src="../assets/img/carrito-blanco-fondo-negro.png" alt="carrito de compras o comprar"></a>
-            </div>
+    <header class="nav-wrapper">
+        <nav>
+            <a href="../index.html">
+                <img src="../assets/img/logo-blanco.png" alt="logo">
+            </a>
+            <input type="checkbox" name="" id="toggle">
+            <label for="toggle"><i class="material-icons">menu</i></label>
+            <div class="menu">
+                <ul>
+                    <li><a href="aboutme.html">ABOUT ME!</a></li>
+                    <li><a href="#">SERVICIOS</a></li>
+                    <li><a href="contacto.html">CONTACT ME!</a></li>
+                    <li><a href="registro.html">REGISTRARSE</a></li>
+                    <li><a href="carrito.html">CARRITO</a></li>
+                </ul>
         </nav>
     </header>
     <main>
-        <section class="sectionSecundaria"> <!--Aca empieza la seccion 2 -->
-            <h2>CONOCE TODOS MIS SERVICIOS</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit. </p>
+        <section class="gridContainer"> <!--Aca empiezan los servicios con layout grids -->
+            <div class="item1">
+                <h1>CONOCE TODOS MIS SERVICIOS</h1>
+            </div>
+            <div class="item2">
+                <h2>CARTA NATAL</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>             
+            </div>
+            <div class="item3">
+                <h3>CARTA NATAL ADULTOS </h3>
+                <p>Lorem ipsum dolor</p>
+                <p>$125.000</p>                
+                <button><a href="../pages/carrito.html">COMPRAR</a></button>
+            </div>
+            <div class="item4">
+                <h3>CARTA NATAL NIÑOS </h3>
+                <p>Lorem ipsum dolor </p>
+                <p>$100.000</p>                
+                <button><a href="../pages/carrito.html">COMPRAR</a></button>
+            </div>
+            <div class="item5">
+                <h2>REVOLUCION SOLAR</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> 
+            </div>
+            <div class="item6">
+                <h3>REVOLUCION SOLAR ADULTOS </h3>
+                <p>Lorem ipsum dolor </p>
+                <p>$75.000</p>
+                <button><a href="../pages/carrito.html">COMPRAR</a></button>
+            </div>
+            <div class="item7">
+                <h3>REVOLUCION SOLAR NIÑOS </h3>
+                <p>Lorem ipsum dolor </p>
+                <p>$55.000</p>
+                <button><a href="../pages/carrito.html">COMPRAR</a></button>
+            </div>
+            <div class="item8">
+                <h2>SESIONES DE COACHING</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> 
+            </div>
+            <div class="item9"> 
+                <h3>SESIONES COACHING ADULTOS</h3>
+                <p>Lorem ipsum dolor</p>
+                <p>$150.000</p>
+                <button><a href="../pages/carrito.html">COMPRAR</a></button>               
+            </div>
+            <div class="item10">               
+                <h3>SESIONES COACHING NIÑOS </h3>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+                <p>$110.000</p>
+                <button><a href="../pages/carrito.html">COMPRAR</a></button> 
+            </div>
+            <div class="item11">
+                <h2>CURSO DE ASTROLOGIA</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Lorem ipsum dolor sit amet consectetur, <br> lorem ipsum dolor sit amet consectetur adipisicing elit.  </p> 
+            </div>
+            <div class="item12">
+                <h3>NIVEL INICIAL </h3>
+                <p>Lorem ipsum dolor sit amet consectetur </p>
+                <p>$150.000</p>
+                <button><a href="../pages/carrito.html">COMPRAR</a></button>    
+            </div>
+            <div class="item13">
+                <h3>NIVEL INTERMEDIO </h3>
+                <p>Lorem ipsum dolor sit amet consectetur </p>
+                <p>$200.000</p>
+                <button><a href="../pages/carrito.html">COMPRAR</a></button>  
+            </div>
+            <div class="item14">
+                <h3>NIVEL AVANZADO </h3>
+                <p>Lorem ipsum dolor sit amet consectetur </p>
+                <p>$250.000</p>
+                <button><a href="../pages/carrito.html">COMPRAR</a></button>    
+            </div>
+            <div class="item15">
+                <h3>NIVEL EXPERTO </h3>
+                <p>Lorem ipsum dolor sit amet consectetur </p>
+                <p>$300.000</p>
+                <button><a href="../pages/carrito.html">COMPRAR</a></button>  
+            </div>
         </section>
-    <section class="cardContainer"> <!--Aca empieza la seccion 3 de cards -->
-            <article class="card">
-            <div>
-                <img src="../assets/img/carta-natal-adultos.png">
-            </div>
-            <h3>CARTA NATAL ADULTOS</h3>
-            <p>Lorem ipsum dolor sit amet consectetur</p>
-            <p>$125.000</p>
-            <button><a href="./carrito.html">COMPRAR</a></button>
-        </article>
-        <article class="card">
-            <div>
-                <img src="../assets/img/coaching.png">
-            </div>
-            <h3>SESIONES COACHING</h3>
-            <p>Lorem ipsum dolor sit amet consectetur</p>
-            <p>$150.000</p>
-            <button><a href="./carrito.html">COMPRAR</a></button>
-        </article>
-        <article class="card">
-            <div>
-                <img src="../assets/img/rev-solar.png">
-            </div>
-            <h3>REVOLUCION SOLAR</h3>
-            <p>Lorem ipsum dolor sit amet consectetur</p>
-            <p>$75.000</p>
-            <button><a href="./carrito.html">COMPRAR</a></button>
-        </article>
-    </section>
-    <section class="cardContainer"> <!--Aca empieza la seccion 3 de cards -->
-        <article class="card">
-        <div>
-            <img src="../assets/img/carta-natal-ninos.png">
-        </div>
-        <h3>CARTA NATAL NIÑOS</h3>
-        <p>Lorem ipsum dolor sit amet consectetur</p>
-        <p>$100.000</p>
-        <button><a href="./carrito.html">COMPRAR</a></button>
-    </article>
-    <article class="card">
-        <div>
-            <img src="../assets/img/orientacion-vocacional.jpg">
-        </div>
-        <h3>ORIENTACION VOCACIONAL</h3>
-        <p>Lorem ipsum dolor sit amet consectetur</p>
-        <p>$130.000</p>
-        <button><a href="./carrito.html">COMPRAR</a></button>
-    </article>
-    <article class="card">
-        <div>
-            <img src="../assets/img/cursos-astrologia.jpg">
-        </div>
-        <h3>CURSOS ASTROLOGIA</h3>
-        <p>Lorem ipsum dolor sit amet consectetur</p>
-        <p>$200.000</p>
-        <button><a href="./carrito.html">COMPRAR</a></button>
-    </article>
-    </section>
-    <section class="sectionSecundaria"> <!--Aca empieza la seccion 2 -->
-            <h3>BUSCAS OTROS SERVICIOS?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit.<br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit. </p>
-            <button><a href="./contacto.html">CONTACTAME AHORA</a></button>
-    </section>
-    </section>
     </main>
     <footer class="footerPrincipal">
         <ul>
             <h4>MEDIOS DE PAGO</h4>
             <p>Lorem ipsum dolor sit amet <br> Consectetur adipisicing elit. <br> Dicta dolor minus ipsum assumenda?</p>
         </ul>
+        <ul>
+            <h4>TERMINOS Y CONDICIONES</h4>
+            <p>Lorem ipsum dolor sit amet <br> Consectetur adipisicing elit. <br> Dicta dolor minus ipsum assumenda?</p>
+        </ul>
+        <ul>
+            <h4>FAQ</h4>
+            <p>Lorem ipsum dolor sit amet <br> Consectetur adipisicing elit. <br> Dicta dolor minus ipsum assumenda?</p>
+        </ul>
+        <ul>
+            <h4>POLITICA DE PRIVACIDAD</h4>
+            <p>Lorem ipsum dolor sit amet <br> Consectetur adipisicing elit. <br> Dicta dolor minus ipsum assumenda?</p>
+        </ul>
         <div>
-            <a href="https://instagram.com/carobozic?igshid=MzRlODBiNWFlZA==" target="_blank"><img src="../assets/img/logo-banco-fondo-negro-IG.jpg" alt="instagram"></a>        
+            <a href="https://instagram.com/carobozic?igshid=MzRlODBiNWFlZA==" target="_blank"><img src="../assets/img/logo-ig.png" alt="instagram"></a>        
         </div>
         <div>     
-            <a href="https://api.whatsapp.com/send/?phone=393338923660&text&type=phone_number&app_absent=0" target="_blank"><img src="../assets/img/logo-blanc-whatsapp-fondo-negro.png" alt="link tree link"></a>
+            <a href="https://api.whatsapp.com/send/?phone=393338923660&text&type=phone_number&app_absent=0" target="_blank"><img src="../assets/img/logo-whatsapp.png" alt="link tree link"></a>
         </div>
     </footer>
 </body>

@@ -4,27 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+/>
+
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header class="headerIndex">
-        <a href="#">
-            <img src="./assets/img/logo-blanco.png" alt="logo">
-        </a>
-        <form action="">
-            <label for="search"></label>
-            <input type="search" name="" id="search">
-        </form>
-        <nav class="navBar">
-            <ul>
-                <li><a href="./pages/aboutme.html">ABOUT ME!</a></li>
-                <li><a href="./pages/servicios.html">SERVICIOS</a></li>
-                <li><a href="./pages/contacto.html">CONTACT ME!</a></li>
-            </ul>
-            <div class="divNav">
-                <a href="./pages/registro.html"><img src="./assets/img/registro-blanco-fondo-negro.png" alt="registro o log in"></a>
-                <a href="./pages/carrito.html"><img src="./assets/img/carrito-blanco-fondo-negro.png" alt="carrito de compras o comprar"></a>
-            </div>
+    <header class="nav-wrapper">
+        <nav>
+            <a href="#">
+                <img src="./assets/img/logo-blanco.png" alt="logo">
+            </a>
+            <input type="checkbox" name="" id="toggle">
+            <label for="toggle"><i class="material-icons">menu</i></label>
+            <div class="menu">
+                <ul>
+                    <li><a href="./pages/aboutme.html">ABOUT ME!</a></li>
+                    <li><a href="./pages/servicios.html">SERVICIOS</a></li>
+                    <li><a href="./pages/contacto.html">CONTACT ME!</a></li>
+                    <li><a href="./pages/registro.html">REGISTRARSE</a></li>
+                    <li><a href="./pages/carrito.html">CARRITO</a></li>
+                </ul>
         </nav>
     </header>
     <main>
@@ -40,31 +42,31 @@
                 <button><a href="./pages/servicios.html">VER MAS</a></button>
         </section>
         <section class="cardContainer"> <!--Aca empieza la seccion 3 de cards -->
-                <article class="card">
+            <article class="card">
                 <div>
                     <img src="./assets/img/carta-natal-adultos.png">
                 </div>
-                <h3>CARTA NATAL ADULTOS</h3>
+                <h3>CARTA NATAL <br> adultos </h3>
                 <p>Lorem ipsum dolor sit amet consectetur</p>
                 <p>$125.000</p>
                 <button><a href="./pages/carrito.html">COMPRAR</a></button>
             </article>
             <article class="card">
                 <div>
-                    <img src="./assets/img/coaching.png">
+                    <img src="./assets/img/rev-solar.png">
                 </div>
-                <h3>SESIONES COACHING</h3>
+                <h3>REVOLUCION SOLAR <br> adultos </h3>
                 <p>Lorem ipsum dolor sit amet consectetur</p>
-                <p>$150.000</p>
+                <p>$75.000</p>
                 <button><a href="./pages/carrito.html">COMPRAR</a></button>
             </article>
             <article class="card">
                 <div>
-                    <img src="./assets/img/rev-solar.png">
+                    <img src="./assets/img/coaching.png">
                 </div>
-                <h3>REVOLUCION SOLAR</h3>
+                <h3>SESIONES COACHING <br> adultos </h3>
                 <p>Lorem ipsum dolor sit amet consectetur</p>
-                <p>$75.000</p>
+                <p>$150.000</p>
                 <button><a href="./pages/carrito.html">COMPRAR</a></button>
             </article>
         </section>
@@ -84,11 +86,23 @@
             <h4>MEDIOS DE PAGO</h4>
             <p>Lorem ipsum dolor sit amet <br> Consectetur adipisicing elit. <br> Dicta dolor minus ipsum assumenda?</p>
         </ul>
+        <ul>
+            <h4>TERMINOS Y CONDICIONES</h4>
+            <p>Lorem ipsum dolor sit amet <br> Consectetur adipisicing elit. <br> Dicta dolor minus ipsum assumenda?</p>
+        </ul>
+        <ul>
+            <h4>FAQ</h4>
+            <p>Lorem ipsum dolor sit amet <br> Consectetur adipisicing elit. <br> Dicta dolor minus ipsum assumenda?</p>
+        </ul>
+        <ul>
+            <h4>POLITICA DE PRIVACIDAD</h4>
+            <p>Lorem ipsum dolor sit amet <br> Consectetur adipisicing elit. <br> Dicta dolor minus ipsum assumenda?</p>
+        </ul>
         <div>
-            <a href="https://instagram.com/carobozic?igshid=MzRlODBiNWFlZA==" target="_blank"><img src="./assets/img/logo-banco-fondo-negro-IG.jpg" alt="instagram"></a>        
+            <a href="https://instagram.com/carobozic?igshid=MzRlODBiNWFlZA==" target="_blank"><img src="./assets/img/logo-ig.png" alt="instagram"></a>        
         </div>
         <div>     
-            <a href="https://api.whatsapp.com/send/?phone=393338923660&text&type=phone_number&app_absent=0" target="_blank"><img src="./assets/img/logo-blanc-whatsapp-fondo-negro.png" alt="link tree link"></a>
+            <a href="https://api.whatsapp.com/send/?phone=393338923660&text&type=phone_number&app_absent=0" target="_blank"><img src="./assets/img/logo-whatsapp.png" alt="link tree link"></a>
         </div>
     </footer>
 </body>

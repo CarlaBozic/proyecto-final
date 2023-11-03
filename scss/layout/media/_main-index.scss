@@ -1,0 +1,176 @@
+
+.sectionPrincipal{
+	background-image: url url("https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1511&q=80");
+	width: 100%;
+	height: 31.25rem;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	color: white;
+	font-size: 1.35rem;
+	padding: 2rem;
+	font-family: 'Quicksand', sans-serif;
+	h1 {
+		text-align: center;
+		font-size: 3.5rem;
+		color: white;
+		padding: 50px 50px 50px 50px;
+		font-family: 'Open Sans', sans-serif;
+	}
+	h1 {
+		font-size: 3.25rem;
+	}
+	h1 {
+		font-size: 2.75rem;
+	}
+}
+
+@media(max-width:1024px){
+    .sectionPrincipal{
+        padding: .5rem;
+        font-size: 1.5rem;
+    }
+    .sectionPrincipal h1{
+        font-size: 3.25rem;
+    }
+}
+
+@media(max-width:768px){
+    .sectionPrincipal{
+        padding: .2rem;
+        font-size: 1.22rem;
+    }
+    .sectionPrincipal h1{
+        font-size: 2.75rem;
+    }
+}
+
+@media(max-width:428px){
+    .sectionPrincipal h1{
+        font-size: 2rem;
+    }
+}
+
+.sectionSecundaria {
+	text-align: center;
+	padding: 1rem;
+	background-color: white;
+	font-size: 1.5rem;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	h2 {
+		font-family: 'Open Sans', sans-serif;
+	}
+	button {
+		font-size: 1.25rem;
+		text-decoration: none;
+		list-style: none;
+		background: black;
+		padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+		margin: 0.5rem;
+		color: white;
+		a {
+			font-size: 1.25rem;
+			text-decoration: none;
+			color: white;
+			font-family: 'Open Sans', sans-serif;
+		}
+	}
+}
+
+.sectionTerciaria {
+	text-align: left;
+	background-color: #1E1438;
+	font-size: 1.5rem;
+	color: white;
+	display: flex;
+	gap: 3rem;
+	padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+	div img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		object-position: right;
+	}
+	div img {
+		object-fit: contain;
+		object-position: none;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-items: center;
+	}
+	article {
+		padding: 2.5rem;
+		margin: 2.5rem;
+		align-items: left;
+		font-family: 'Roboto', sans-serif;
+	}
+	h2 {
+		font-family: 'Open Sans', sans-serif;
+	}
+	button {
+		font-size: 1.25rem;
+		text-decoration: none;
+		list-style: none;
+		background: white;
+		padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+		margin: 0.5rem;
+		color: black;
+		a {
+			font-size: 1.25rem;
+			text-decoration: none;
+			color: black;
+			background-color: white;
+			font-family: 'Open Sans', sans-serif;
+		}
+	}
+}
+
+
+.mainPrincipal {
+	background-color: black;
+	color: white;
+	display: flex;
+	list-style: none;
+	font-size: 1.25rem;
+	justify-content: space-between;
+	align-items: left;
+	flex-direction: column;
+	gap: 3rem;
+}
+
+@media(max-width:1024px){
+    .sectionTerciaria{
+        text-align: center;
+        background-color: #1E1438;
+        font-size: 1.75rem;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        justify-items: center;
+        gap: 1rem;
+    }
+    .sectionTerciaria div img{
+        object-fit:contain;
+        object-position: none;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-items: center;
+    }
+}
+
+@media(max-width:428px){
+    .sectionTerciaria{
+        font-size: 1.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        gap: 1.5rem;
+    }
+}

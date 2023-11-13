@@ -1,0 +1,247 @@
+
+.gridContainer {
+	display: grid;
+	width: 100%;
+	height: 100%;
+	grid-template-columns: repeat(4,1fr);
+	grid-template-rows: repeat(6,1fr);
+	grid-template-areas: "servicios servicios servicios servicios"
+    "cartaNatal cartaNatal cartaAdultos cartaNinos"
+    "revSolar revSolar revAdultos revNinos"
+    "coaching coaching coachAdultos coachNinos"
+    "astro astro basico intermedio"
+    "astro astro avanzado experto"
+    ;
+	row-gap: .15rem;
+	justify-items: center;
+	align-items: center;
+	background-color: black;
+	color: white;
+}
+.item1 {
+	grid-area: servicios;
+	width: 100%;
+	text-align: center;
+	font-size: 2.15rem;
+	padding: 2rem;
+	font-family: 'Open Sans', sans-serif;
+	background-color: white;
+	color: black;
+	&0 {
+		grid-area: coachNinos;
+		text-align: center;
+		justify-self: center;
+		font-family: 'Roboto', sans-serif;
+		gap: .25rem;
+		button {
+			margin-top: 1rem;
+			a {
+				font-size: 1rem;
+				text-decoration: none;
+				background-color: white;
+				color: black;
+				font-family: 'Open Sans', sans-serif;
+			}
+		}
+	}
+	&1 {
+		grid-area: astro;
+		background-image: url(../assets/img/carta-natal-adultos.png);
+		height: 100%;
+		width: 100%;
+		background-size: cover;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.15rem;
+		padding-top: 5.5rem;
+		font-family: 'Mooli', sans-serif;
+	}
+	&2 {
+		grid-area: basico;
+		text-align: center;
+		justify-self: center;
+		font-family: 'Roboto', sans-serif;
+		gap: .25rem;
+		button {
+			margin-top: .5rem;
+			a {
+				font-size: 1rem;
+				text-decoration: none;
+				background-color: white;
+				color: black;
+				font-family: 'Open Sans', sans-serif;
+			}
+		}
+	}
+	&3 {
+		grid-area: intermedio;
+		text-align: center;
+		justify-self: center;
+		font-family: 'Roboto', sans-serif;
+		gap: .25rem;
+		button {
+			margin-top: .5rem;
+			a {
+				font-size: 1rem;
+				text-decoration: none;
+				background-color: white;
+				color: black;
+				font-family: 'Open Sans', sans-serif;
+			}
+		}
+	}
+	&4 {
+		grid-area: avanzado;
+		text-align: center;
+		justify-self: center;
+		font-family: 'Roboto', sans-serif;
+		gap: .25rem;
+		button {
+			margin-top: .5rem;
+			a {
+				font-size: 1rem;
+				text-decoration: none;
+				background-color: white;
+				color: black;
+				font-family: 'Open Sans', sans-serif;
+			}
+		}
+	}
+	&5 {
+		grid-area: experto;
+		text-align: center;
+		justify-self: center;
+		font-family: 'Roboto', sans-serif;
+		gap: .25rem;
+		button {
+			margin-top: .5rem;
+			a {
+				font-size: 1rem;
+				text-decoration: none;
+				background-color: white;
+				color: black;
+				font-family: 'Open Sans', sans-serif;
+			}
+		}
+	}
+}
+.item2 {
+	grid-area: cartaNatal;
+	background-image: url(../assets/img/carta-natal-adultos.png);
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding: 2rem;
+	font-size: 1.2rem;
+	font-family: 'Mooli', sans-serif;
+}
+.item3 {
+	grid-area: cartaAdultos;
+	text-align: center;
+	justify-self: center;
+	font-family: 'Roboto', sans-serif;
+	button {
+		margin-top: .5rem;
+		a {
+			font-size: 1rem;
+			text-decoration: none;
+			background-color: white;
+			color: black;
+			font-family: 'Open Sans', sans-serif;
+		}
+	}
+}
+.item4 {
+	grid-area: cartaNinos;
+	text-align: center;
+	justify-self: center;
+	font-family: 'Roboto', sans-serif;
+	button {
+		margin-top: 0.5rem;
+		a {
+			font-size: 1rem;
+			text-decoration: none;
+			background-color: white;
+			color: black;
+			font-family: 'Open Sans', sans-serif;
+		}
+	}
+}
+.item5 {
+	grid-area: revSolar;
+	background-image: url(../assets/img/rev-solar.png);
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding: 2rem;
+	font-size: 1.15rem;
+	font-family: 'Mooli', sans-serif;
+}
+.item6 {
+	grid-area: revAdultos;
+	text-align: center;
+	justify-self: center;
+	font-family: 'Roboto', sans-serif;
+	gap: .25rem;
+	button {
+		margin-top: .5rem;
+		a {
+			font-size: 1rem;
+			text-decoration: none;
+			background-color: white;
+			color: black;
+			font-family: 'Open Sans', sans-serif;
+		}
+	}
+}
+.item7 {
+	grid-area: revNinos;
+	text-align: center;
+	justify-self: center;
+	font-family: 'Roboto', sans-serif;
+	gap: .25rem;
+	button {
+		margin-top: 1rem;
+		a {
+			font-size: 1rem;
+			text-decoration: none;
+			background-color: white;
+			color: black;
+			font-family: 'Open Sans', sans-serif;
+		}
+	}
+}
+.item8 {
+	grid-area: coaching;
+	background-image: url(../assets/img/coaching.png);
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 2rem;
+	text-align: center;
+	font-size: 1.15rem;
+	font-family: 'Mooli', sans-serif;
+}
+.item9 {
+	grid-area: coachAdultos;
+	text-align: center;
+	justify-self: center;
+	font-family: 'Roboto', sans-serif;
+	gap: .25rem;
+	button {
+		margin-top: .5rem;
+		a {
+			font-size: 1rem;
+			text-decoration: none;
+			background-color: white;
+			color: black;
+			font-family: 'Open Sans', sans-serif;
+		}
+	}
+}

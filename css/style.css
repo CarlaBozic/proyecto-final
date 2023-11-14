@@ -14,6 +14,7 @@ font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 
+/* aca comienza el header */
 nav-wrapper{
     width: 100%;
     margin:0 auto;
@@ -98,35 +99,48 @@ nav #toggle, nav label{
     }
 }
 
+@media(max-width: 320px){
+    a img{
+        width: 12rem;
+        height: 3.5rem;
+    }
+}
+
+
+/* aca termina el header */
+
+
+/* aca comienza el index */
+
 .sectionPrincipal{
     background-image: url("https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1511&q=80");
     width: 100%;
-    height: 31.25rem;
+    height: 100hv;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
+    align-items: center;
+    justify-items: center;
     color: white;
     font-size: 1.35rem;
-    padding: 2rem;
     font-family: 'Quicksand', sans-serif;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+
 }
 
 .sectionPrincipal h1{
-    text-align: center;
-    font-size: 3.5rem;
+    font-size: 4rem;
     color:white;
-    padding: 50px 50px 50px 50px;
     font-family: 'Open Sans', sans-serif;
+    padding-bottom: 1rem;
 }
 
 @media(max-width:1024px){
-    .sectionPrincipal{
-        padding: .5rem;
-        font-size: 1.5rem;
-    }
     .sectionPrincipal h1{
         font-size: 3.25rem;
+        gap: 1rem;
     }
 }
 
@@ -134,6 +148,8 @@ nav #toggle, nav label{
     .sectionPrincipal{
         padding: .2rem;
         font-size: 1.22rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
     }
     .sectionPrincipal h1{
         font-size: 2.75rem;
@@ -141,31 +157,54 @@ nav #toggle, nav label{
 }
 
 @media(max-width:428px){
+    .sectionPrincipal{
+        gap: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
     .sectionPrincipal h1{
         font-size: 2rem;
     }
 }
 
+@media(max-width:320px){
+    .sectionPrincipal{
+        gap: 3rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        font-size: 1rem;
+    }
+    .sectionPrincipal h1{
+        font-size: 1.85rem;
+    }
+
+        
+}
 
 .sectionSecundaria{
     text-align: center;
     padding: 1rem;
     background-color: white;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: black;
     font-family: 'Roboto', sans-serif;
+    padding-bottom: .5rem;
+    margin: none;
 }
 
 .sectionSecundaria h2{
     font-family: 'Open Sans', sans-serif;
 }
 
+
 .sectionSecundaria button{
     font-size: 1.25rem;
     text-decoration: none;
     list-style: none;
     background: black;
-    padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+    padding: 0.25rem 0.25rem 0.25rem 0.rem;
     margin: 0.5rem;
     color: white
 }
@@ -196,6 +235,7 @@ nav #toggle, nav label{
         height: 30rem;
         padding-right: 3.5rem;
     }
+    
 }
 
 @media(max-width:768px){
@@ -203,11 +243,18 @@ nav #toggle, nav label{
         display: flex;
         width: 100%;
         height: 100rem;
-        justify-content: space-between;
+        justify-content: center;
+        align-items:  center;
+        justify-items: center;
         align-content:  center;
         flex-direction: column;
+        gap: none;
+        margin: none;
+        padding-bottom: none;
+        padding-top: none;
     }
 }
+
 
 .card{
     width: 18.75rem;
@@ -220,10 +267,11 @@ nav #toggle, nav label{
     gap: 3rem;
 }
 
+
 .card h3{
     font-weight: bold;
-    font-size: 1.5rem;
-    font-family: 'Permanent Marker', cursive;
+    font-size: 1.65rem;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .card div img{
@@ -238,11 +286,11 @@ nav #toggle, nav label{
     list-style: none;
     background: black;
     color: white;
-    margin: 0.35rem 0.35rem 0.35rem 0.35rem;
+    margin-top: 1rem;
 }
 
 .card button a{
-    font-size: 0.85rem;
+    font-size: 1.5rem;
     text-decoration: none;
     color: white;
     font-family: 'Open Sans', sans-serif;
@@ -250,102 +298,7 @@ nav #toggle, nav label{
     justify-items: center;
 }
 
-.footerPrincipal{
-    background-color:black;
-    color: white;
-    list-style: none;
-    font-size: 1rem;
-    display: flex;
-    flex-direction:row;
-    justify-content:center;
-    align-items:center;
-    padding:1rem 1.5rem;
-    gap: 1rem;
-}
 
-
-.footerPrincipal ul{
-    margin: 2.5rem;
-    font-size: 0.85rem;
-    font-family: 'Mooli', sans-serif;
-}
-
-.footerPrincipal div a img{
-    display:flex;
-    align-items: center;
-    padding-top: 1rem 1rem 1rem 1rem;
-    gap: 1rem;
-    width: 3.2rem;
-    height: 3rem;
-}
-
-@media(max-width:1024px){
-    .footerPrincipal{
-        display: flex;
-        justify-items: center;
-        justify-content: center;
-        align-content: center;
-        align-items: flex-start;
-    }
-    .footerPrincipal ul{
-        margin: 1rem;
-        font-size: 0.70rem;
-        font-family: 'Mooli', sans-serif;
-        justify-content: space-between;
-        justify-items: center;
-        align-content: flex-start;
-        align-items: flex-start;
-        padding-right: 1.5rem;
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
-@media(max-width:428px){
-    .footerPrincipal{
-        display: flex;
-        flex-direction:column;
-        justify-items: center;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        gap: 0.045rem;
-    }
-    .footerPrincipal ul{
-        font-size: 0.7rem;
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        padding-top: 0.5rem 0.5rem 0.5rem 0.5rem;
-        text-align: center;
-        gap: 0.045rem;
-    }
-    .footerPrincipal div a img{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 1rem 1rem 1rem 1rem;
-        gap: 0.6rem;
-        width: 2.1rem;
-        height: 2rem;
-    }
-}
-
-.mainPrincipal{
-    background-color:black;
-    color: white;
-    display: flex;
-    list-style: none;
-    font-size: 1.25rem;
-    justify-content: space-between;
-    align-items: left;
-    flex-direction: column;
-    gap: 3rem;
-}
 
 .sectionTerciaria{
     text-align: left;
@@ -368,17 +321,15 @@ nav #toggle, nav label{
 @media(max-width:1024px){
     .sectionTerciaria{
         text-align: center;
-        background-color: #1E1438;
-        font-size: 1.75rem;
         color: white;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-around;
-        padding-left: 0rem;
-        padding-right: 0rem;
+        padding: 0rem;
         justify-items: center;
-        gap: 1rem;
+        gap: 0rem;
+        margin: 0rem;
     }
     .sectionTerciaria div img{
         object-fit:contain;
@@ -387,15 +338,24 @@ nav #toggle, nav label{
         flex-wrap: wrap;
         align-items: center;
         justify-items: center;
+        padding-top: 0rem;
+        margin-top: 0rem;
     }
 }
 
 @media(max-width:428px){
     .sectionTerciaria{
-        font-size: 1.5rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        gap: 1.5rem;
+        font-size: 1.15rem;
+        padding-left: 0.1rem;
+        padding-right: 0.1rem;
+        margin: none;
+        gap: 1rem;
+    }
+    .sectionTerciaria article{
+        padding-left: 0.1rem;
+        padding-right: 0.1rem;
+        margin: none;
+        gap: 1rem;
     }
 }
 
@@ -430,16 +390,28 @@ nav #toggle, nav label{
     font-family: 'Open Sans', sans-serif;
 }
 
+/* aca termina el index */
+
+/* aca empieza la pagina about me*/
+
+
 .sectionSecundariaBis{
-    text-align: left;
+    text-align: center;
     display: flex;
+    flex-direction:row;
     padding: 1rem;
     background-color: white;
     font-size: 1.5rem;
     color: black;
     font-family: 'Roboto', sans-serif;
-    gap: 20rem;
+    gap: 5rem;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items:center;
+    flex-wrap: nowrap;
 }
+
 
 .sectionSecundariaBis h2{
     font-family: 'Open Sans', sans-serif;
@@ -447,6 +419,7 @@ nav #toggle, nav label{
 
 .sectionSecundariaBis h3{
     font-family: 'Roboto', sans-serif;
+
 }
 
 .sectionSecundariaBis p{
@@ -455,27 +428,124 @@ nav #toggle, nav label{
 }
 
 .sectionSecundariaBis div img{
-    width: 22rem;
-    height: 20rem;
-    align-items: right;
+    width: 100%;
+    height: 30rem;
+    align-items: left;
 }
 
+.sectionSecundariaA{
+    display: flex;
+    background-color: black;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    color:white;
+    font-family:  'Open Sans', sans-serif;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+.sectionSecundariaBisBis{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
 
 .sectionSecundariaBisBis button{
-    font-size: 1.25rem;
+    display: flex;
     text-decoration: none;
     list-style: none;
-    background: black;
+    border-color: none;
+    border-style: none;
+    color: black;
+    background-color: white;
+    text-align: center;
+    align-content: center;
     justify-content: center;
-    margin: 1rem 1rem 1rem;
+    align-items:center;
+    justify-items:center;
 }
 
 .sectionSecundariaBisBis button a{
-    font-size: 1.25rem;
+    font-size: 2rem;
     text-decoration: none;
-    color: white;
+    color: black;
+    background-color: white;
     font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
 }
+
+@media(max-width:1024px){
+    .sectionSecundariaBis{
+        gap:0.95rem;
+    }
+
+    .sectionSecundariaBis div img{
+        width: 100%;
+        height: 100hv;
+        align-items: left;
+        margin-top: none;
+        margin-bottom: none;
+        padding-top: none;
+        padding-bottom: none;
+        object-fit: cover;
+    }
+
+    .sectionSecundariaBis h2{
+        margin-top: none;
+        margin-bottom: none;
+        padding-top: none;
+        padding-bottom: none;
+    }
+
+}
+
+@media(max-width:768px){
+    .sectionSecundariaA{
+        font-size:1.15rem;
+    }
+}
+
+@media(max-width:428px){
+    .sectionSecundariaBis{
+        font-size:1rem;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .sectionSecundariaBis div img{
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .sectionSecundariaA h2{
+        font-size: 1.15rem;
+        padding-bottom: 1rem;
+        flex-wrap: wrap;
+    }
+    .sectionSecundariaA iframe{
+        width: 100%;
+        height: 100hv;
+        object-fit: contain;
+    }
+}
+
+@media(max-width:320px){
+    .sectionSecundariaBisBis button a{
+        font-size: 1.25rem;
+    }
+}
+
+/* aca termina la pagina about me*/
 
 .mainRegistro{
     background-color: black;
@@ -808,6 +878,18 @@ nav #toggle, nav label{
         font-family: 'Open Sans', sans-serif;
     }
 
+    .mainPrincipal{
+        background-color:black;
+        color: white;
+        display: flex;
+        list-style: none;
+        font-size: 1.25rem;
+        justify-content: space-between;
+        align-items: left;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
     /* aca empieza el footer */
 
 .footerPrincipal{
@@ -870,6 +952,7 @@ nav #toggle, nav label{
         align-content: center;
         align-items: center;
         gap: 0.045rem;
+        padding-left: 2.5rem;
     }
     .footerPrincipal ul{
         font-size: 0.7rem;
